@@ -1,0 +1,73 @@
+html {
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    display: block;
+}
+.main-header li a {
+    color: #00314c;
+}
+
+li.exist_sub {
+    position: relative;
+}
+ul.sub_menu {
+    padding: 10px;
+    z-index: 10;
+    position: absolute !important;
+    margin: 0;
+    text-align: left;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 15px;
+    white-space: nowrap;
+    top: 50px;
+    left: 0px;
+    background: #fff;
+}
+.nav_menu ul, .nav_signin ul {
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+    flex-flow: row wrap;
+    position: relative;
+}
+.nav_menu ul li  {
+    flex: auto;
+    text-align: center;
+    font-size: 1.25rem   ;
+}
+.nav_signin ul li {
+    font-size: 1rem
+}
+.nav_menu ul li  , .nav_signin ul li {
+    display: block;
+    padding: 10px;
+}
+.nav_signin ul {
+    position: relative;
+}
+
+.nav_signin ul li{
+    /*position: absolute;*/
+}
+.nav_signin ul .signin {
+    position: absolute;
+    right: 0;
+}
+.nav_signin ul .language {
+    position: absolute;
+    right: 110px;
+}
+.learn {
+    position: absolute;
+    left: 110px;
+}
+.nav_signin ul .signin a {
+    background: #00314c;
+    border-radius: 15px;
+    padding: 5px 20px;
+    color: white;
+}
