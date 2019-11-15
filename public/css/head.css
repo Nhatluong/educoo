@@ -1,6 +1,11 @@
 html {
     font-size: 16px;
 }
+@media (max-width: 500px) {
+    html, body {
+        font-size: 14px !important;
+    }
+}
 
 ul {
     list-style: none;
@@ -25,15 +30,13 @@ ul.sub_menu {
     top: 50px;
     left: 0px;
     background: #fff;
+    display: none !important;
 }
-.nav_menu ul, .nav_signin ul {
-    display: flex;
-    -webkit-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    flex-basis: auto;
-    flex-flow: row wrap;
-    position: relative;
-}
+/*.nav_signin ul  {*/
+    /*display: block;*/
+    /*min-height: 40px;*/
+/*}*/
+
 .nav_menu ul li  {
     flex: auto;
     text-align: center;
@@ -42,32 +45,95 @@ ul.sub_menu {
 .nav_signin ul li {
     font-size: 1rem
 }
-.nav_menu ul li  , .nav_signin ul li {
-    display: block;
+.sub_menu li {
+    display: block !important;
+    padding: 10px;
+}
+ul li {
+    display: inline-block ;
     padding: 10px;
 }
 .nav_signin ul {
-    position: relative;
+    text-align: right;
+    padding: 15px 0;
 }
 
-.nav_signin ul li{
-    /*position: absolute;*/
-}
-.nav_signin ul .signin {
-    position: absolute;
-    right: 0;
-}
-.nav_signin ul .language {
-    position: absolute;
-    right: 110px;
-}
-.learn {
-    position: absolute;
-    left: 110px;
-}
 .nav_signin ul .signin a {
     background: #00314c;
     border-radius: 15px;
     padding: 5px 20px;
     color: white;
+}
+.exist_sub:hover > .sub_menu {
+    display: block !important;
+}
+.lg_hide {
+    float: left;
+    display: none !important;
+}
+a:hover, a:focus {
+    color: #2a6496;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #d13239;
+}
+.contain_logo {
+    padding: 20px;
+    max-width: 300px;
+    max-height: 135px;
+    margin:auto;
+    text-align: center;
+}
+.no_padding {
+    padding: 0;
+}
+
+@media (min-width: 993px) {
+
+    .nav_menu > ul {
+        display: flex !important;
+        -webkit-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        flex-basis: auto;
+        flex-flow: row wrap;
+        position: relative;
+        padding-left: 0 !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .lg_hide {
+        display: block !important;
+    }
+    .nav_menu {
+        position: fixed;
+        left: 0;
+        top:0;
+        z-index:1;
+    }
+    .nav_menu > ul {
+        flex-direction: column;
+        justify-content: left !important;
+        background: white;
+        border-right: 1px solid #d2d2d2;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 320px;
+        display: none ;
+        box-shadow: 2px 1px 10px 3px #d2d2d2;
+        padding-left: 0 !important;
+
+
+    }
+    .nav_menu ul li {
+        flex: none;
+        display: block;
+    }
+    .contain_logo {
+        padding: 10px !important;
+    }
+
 }

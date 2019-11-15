@@ -1,5 +1,5 @@
-<header class="main-header container">
-    <div class="" style="padding-top: 20px">
+<header class="main-header">
+    <div class="container" style="">
         <nav class="nav_signin">
             <ul>
                 <li class="btn_open_menu lg_hide">
@@ -12,13 +12,14 @@
                 <li class="lg_hide learn">
                     <a href="#">Đăng ký học thử </a>
                 </li>
-                <li class="signin">
-                    <a>Sign in</a>
-                </li>
+
                 <li class="language">
                     <a href="#">VN</a>
                     |
                     <a href="#">EN</a>
+                </li>
+                <li class="signin">
+                    <a>Sign in</a>
                 </li>
             </ul>
         </nav>

@@ -1,0 +1,301 @@
+@media (min-width: 993px) {
+    .only_border {
+        border-right: 2px solid #024D99;
+        height: 100px;
+        width: 0px;
+        margin: auto;
+    }
+    .container_only_border {
+        padding: 2rem;
+    }
+}
+@media (max-width: 992px) {
+    .contaner_2_section4 .item_step {
+        min-height: 13rem !important;
+    }
+    .item_step_1, .item_step_2 {
+        margin-bottom: 6rem !important;
+    }
+    .number_1, .number_2 {
+        bottom: calc(100% + 2rem) !important;
+    }
+    .number_3, .number_4 {
+        bottom: 100% !important;
+    }
+
+}
+.bg_blue {
+    background: #00314c;
+}
+section.section_banner {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    position: relative;
+}
+section.section_banner::before {
+    content: "";
+    z-index: 3;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -1px;
+    margin: auto;
+    height: 0;
+    width: 0;
+    border-top: 3.5em solid white;
+    border-left: 7.5em solid transparent;
+    border-right: 7.5em solid transparent;
+}
+.image_banner {
+    background: url(http://educoo.vn/Content/v-637088577654292784/img/banner.png) no-repeat;
+    background-size: contain;
+    padding-bottom: 60%;
+    position: relative;
+}
+.image_in_banner {
+    text-align: center;
+    padding: 10%;
+    position: absolute;
+    background: url(http://educoo.vn/Data/upload/images/anh_trang_chu/banner/chat.png) no-repeat;
+    background-size: contain;
+    right: 49%;
+    top: 15%;
+}
+a.btn_see_more {
+    text-align: center;
+    min-width: 7rem;
+    display: inline-block;
+    border: 2px solid #428bca;
+    padding: 7px;
+    border-radius: 3rem;
+}
+p.p1_banner {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+p.p2_banner {
+    font-size: 3em;
+    font-weight: bold;
+}
+p.p3_banner {
+    font-size: 1.25em;
+}
+section.section_02 {
+    background: #e9f9ff;
+    color: #024D99;
+}
+.section_02 .title_section2 {
+    padding: 2rem;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+.item_section_2 {
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 0 3rem 2rem 3rem;
+    font-weight: 400;
+}
+.item_section_2 .image {
+    padding-bottom: 2rem;
+}
+.img_footer_section2 {
+    text-align: center;
+}
+.img_footer_section2 img {
+    margin:auto;
+}
+section.section_3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #6ed9ff;
+    padding: 2rem 2rem 3rem;
+}
+.section_3_text {
+    font-weight: bold;
+}
+.section_3_text p {
+    margin-bottom: 3rem;
+}
+.section_3_text a {
+    font-size: 1.25rem;
+    font-weight: 100;
+    border:1px solid #6ed9ff;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    width: 10rem;
+    display: inline-block;
+}
+
+.section_4 {
+    padding: 3rem 0 0;
+    position: relative;
+    /*background-image: url(http://educoo.vn/Content/v-637088577654292784/img/bg-rocket.png);*/
+    /*background-repeat: no-repeat;*/
+
+}
+.xx {
+    height: 100%;
+    content: "";
+    background-image: url(http://educoo.vn/Content/v-637088577654292784/img/bg-rocket.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    background-size: cover;
+}
+.contaner_1_section4 {
+    color: #024D99;
+    font-size: 2rem;
+    padding: 2rem 0 4rem;
+
+}
+.contaner_1_section4 .div_women {
+    text-align: center;
+    /* padding-right: 7rem; */
+    font-weight: bold;
+    background: url(http://educoo.vn/Content/v-637088577654292784/img/1x/icon-quy-trình/women.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 137%;
+    padding: 1rem 0;
+}
+.contaner_1_section4 .span_bold {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.contaner_1_section4 .div_boy {
+    text-align: center;
+    font-weight: 300;
+    background: url(http://educoo.vn/Content/v-637088577654292784/img/1x/icon-quy-trình/boy.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 157%;
+    padding: 1rem 0;
+}
+.contaner_1_section4 .p_women_1, .contaner_1_section4 .p_women_2 {
+    margin:0;
+}
+.p_women_1 {
+    position: relative;
+}
+p.p_women_2 {
+    padding-left: 50%;
+    text-align: left;
+}
+span.rotate {
+    top: 100%;
+    /* bottom: 100%; */
+    position: absolute;
+    transform: rotate(-90deg);
+    right: 50%;
+}
+.contaner_2_section4 {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+.contaner_2_section4 .item_step:first-child {
+     border-left: 5px solid #64cbff;
+}
+.contaner_2_section4 .item_step {
+    border-right: 5px solid #64cbff;
+    color: #64cbff;
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    padding: 3rem 3rem 3rem;
+    margin-bottom: 2rem;
+    min-height: 16rem;
+}
+.number {
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    background: palevioletred;
+    text-align: center;
+    line-height: 5rem;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    bottom: calc(100% + 2rem);
+    text-shadow: 1px 1px 0 #00314c, 1px -1px 0 #00314c, -1px 1px 0 #00314c, -1px -1px 0 #00314c, 1px 0px 0 #00314c, 0px 1px 0 #00314c, -1px 0px 0 #00314c, 0px -1px 0 #00314c;
+}
+.number_1 {
+    background: #FFBC5A;
+    color: #FFBC5A;
+}
+.number_2 {
+    background: #f0ac36;
+    color: #f0ac36;
+}
+.number_3 {
+    background: #ec7b51;
+    color: #ec7b51;
+}
+.number_4 {
+    background: #cf3238;
+    color: #cf3238;
+}
+.img_step {
+    width: 4rem;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+}
+.direction {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-top: 4px solid #64cbff;
+    border-right: 4px solid #64cbff;
+    transform: rotate(45deg);
+    top: calc(50% - 2rem);
+    right: calc(-1.5rem);
+    background: #00314c;
+    /* z-index: 0; */
+}
+.container_register {
+     padding-top: 1.5rem;
+ }
+
+a.a_register {
+    border-radius: 2rem;
+    background: #64cbff;
+    font-size: 1.25rem;
+    color: #02314c;
+    padding: 0.75rem 1rem;
+}
+.learn_output {
+    color: #054d99;
+    text-align: center;
+    padding: 4rem 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+li.li_item_checked {
+    display: block;
+    font-size: 1.5rem;
+    color: #054d99;
+    padding-left: 4rem;
+    position: relative;
+}
+
+.li_item_checked::before {
+    content: "";
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 0.5rem;
+    background: url(http://educoo.vn/Content/v-637088577654292784/img/1x/icon-sau-1-khoa-hoc/checked-box.png) no-repeat;
+    background-size: cover;
+    left: 0;
+}
+
+.item_check_output ul {
+    padding-left: 0;
+}
+.item_check_output , .img_check_output {
+    padding: 1rem 3rem;
+}

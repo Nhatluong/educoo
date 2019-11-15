@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -6,116 +7,27 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{asset('/css/head.css')}}">
+    @yield('stylesheet')
     </head>
     <body>
     <div class="wrapper">
         @include('admin_master.header')
+        <div class="container">
+            <div class="contain_logo">
+                <img src="http://educoo.vn/Data/ResizeImage/files/Logo-finalx200x60x4.png">
+            </div>
+        </div>
         <div class="wrap_content">
-            <dd>CCCC</dd>
-            <del>ddd</del>
-            <details>chao ban</details>
-            <p>xin chao can i help you</p>
-            <em>the em</em>
-            <ins> the ins</ins>
-            <kbd>the kbd</kbd>
-            <mark>the mark</mark>
+            @yield('content')
         </div>
         <footer></footer>
     </div>
         <!-- Latest compiled and minified JavaScript -->
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+    <script src="{{asset('/js/head.js')}}"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    @yield('script')
     </body>
 </html>
-<!DOCTYPE html>
-{{--<html>--}}
-{{--<head>--}}
-    {{--<meta name="viewport" content="width=device-width, initial-scale=1">--}}
-    {{--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">--}}
-    {{--<style>--}}
-        {{--body {--}}
-            {{--margin: 0;--}}
-            {{--font-family: Arial, Helvetica, sans-serif;--}}
-        {{--}--}}
-
-        {{--.topnav {--}}
-            {{--overflow: hidden;--}}
-            {{--background-color: #333;--}}
-        {{--}--}}
-
-        {{--.topnav a {--}}
-            {{--float: left;--}}
-            {{--display: block;--}}
-            {{--color: #f2f2f2;--}}
-            {{--text-align: center;--}}
-            {{--padding: 14px 16px;--}}
-            {{--text-decoration: none;--}}
-            {{--font-size: 17px;--}}
-        {{--}--}}
-
-        {{--.topnav a:hover {--}}
-            {{--background-color: #ddd;--}}
-            {{--color: black;--}}
-        {{--}--}}
-
-        {{--.topnav a.active {--}}
-            {{--background-color: #4CAF50;--}}
-            {{--color: white;--}}
-        {{--}--}}
-
-        {{--.topnav .icon {--}}
-            {{--display: none;--}}
-        {{--}--}}
-
-        {{--@media screen and (max-width: 600px) {--}}
-            {{--.topnav a:not(:first-child) {display: none;}--}}
-            {{--.topnav a.icon {--}}
-                {{--float: right;--}}
-                {{--display: block;--}}
-            {{--}--}}
-        {{--}--}}
-
-        {{--@media screen and (max-width: 600px) {--}}
-            {{--.topnav.responsive {position: relative;}--}}
-            {{--.topnav.responsive .icon {--}}
-                {{--position: absolute;--}}
-                {{--right: 0;--}}
-                {{--top: 0;--}}
-            {{--}--}}
-            {{--.topnav.responsive a {--}}
-                {{--float: none;--}}
-                {{--display: block;--}}
-                {{--text-align: left;--}}
-            {{--}--}}
-        {{--}--}}
-    {{--</style>--}}
-{{--</head>--}}
-{{--<body>--}}
-
-{{--<div class="topnav" id="myTopnav">--}}
-    {{--<a href="#home" class="active">Home</a>--}}
-    {{--<a href="#news">News</a>--}}
-    {{--<a href="#contact">Contact</a>--}}
-    {{--<a href="#about">About</a>--}}
-    {{--<a href="javascript:void(0);" class="icon" onclick="myFunction()">--}}
-        {{--<i class="fa fa-bars"></i>--}}
-    {{--</a>--}}
-{{--</div>--}}
-
-{{--<div style="padding-left:16px">--}}
-    {{--<h2>Responsive Topnav Example</h2>--}}
-    {{--<p>Resize the browser window to see how it works.</p>--}}
-{{--</div>--}}
-
-{{--<script>--}}
-    {{--function myFunction() {--}}
-        {{--var x = document.getElementById("myTopnav");--}}
-        {{--if (x.className === "topnav") {--}}
-            {{--x.className += " responsive";--}}
-        {{--} else {--}}
-            {{--x.className = "topnav";--}}
-        {{--}--}}
-    {{--}--}}
-{{--</script>--}}
-
-{{--</body>--}}
-{{--</html>--}}
